@@ -16,3 +16,57 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+/* Timer */
+.controls {
+  margin-top: 20px;
+  margin-bottom: 32px;
+  display: flex;
+  gap: 8px;
+}
+
+input#datetime-picker {
+  padding: 8px 16px;
+  font-size: 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  outline: none;
+}
+
+button[data-start] {
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #4e75ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[data-start]:disabled {
+  background-color: #cfcfcf;
+  color: #989898;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  gap: 24px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.value {
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.label {
+  font-size: 12px;
+  text-transform: uppercase;
+}
